@@ -13,3 +13,5 @@ bugün git, github, vs code ve node.js hakkında giriş bilgileri öğrenmeye ç
 - backend--> kullanıcıların görmediği arka yüzü oluşturur/geliştirir. python, c#, sql gibi diller kullanılır.
 - veritabanı--> verilerimizi tekrar kullanmak amaçlı depolamamızı sağlar. veriyi hızlı okur, tekrardan yazabilir, genişletebilir.
 - git push origin main komutundaki origin; uzak deponun adı. main; gönderilecek branchin adı
+- git status yazarak klasörün durumunu görürüz
+- git log ile commitlerin kaydını görürü
