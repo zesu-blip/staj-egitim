@@ -12,4 +12,4 @@ bugün git, github, vs code ve node.js hakkında giriş bilgileri öğrenmeye ç
 - frontend--> client-side. websiteinin ön yüzünü ve görsel tarafını oluşturur. html, css js gibi diller kullanılır.
 - backend--> kullanıcıların görmediği arka yüzü oluşturur/geliştirir. python, c#, sql gibi diller kullanılır.
 - veritabanı--> verilerimizi tekrar kullanmak amaçlı depolamamızı sağlar. veriyi hızlı okur, tekrardan yazabilir, genişletebilir.
-- git push origin main komutundaki origin; bizim local olarak yazdığımızı remote repoya iletir.
+- git push origin main komutundaki origin; uzak deponun adı. main; gönderilecek branchin adı
