@@ -1,0 +1,4 @@
+git ve github komutlarını öğrenmeye çalıştımve komutları tekrar ederek pratik yaptım
+bash üzerinden kendi Git reposunu oluşturarak komutları denedim
+git status, git add, git commit ve git push komutlarını uyguladım
+github'ta repo düzeni ve klasör yapısını öğrenmeye çalıştım
