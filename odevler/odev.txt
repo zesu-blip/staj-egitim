@@ -1,8 +1,22 @@
-- tarayıcıda F12 ile açılan geliştirici araçlarla o  web sayfasının kaynak kodunu inceleyebiliriz, ve bildiğim kadarıyla bizde console yerinden web sitesi üzerinde değişiklikler yapabiliriz.
-- Network sekmesinde bir sayfa açılırken arkada yazılan html, css vs kodları akıyor
-- client: kullanıcı, kullanıcının kullandığı tarayıcı / server: kullanıcıya isteğinin karşılığını gösteren
-- bir http de ilk tarayıcıya bir istek gönderilir. istek sunucuya ulaşır, sunucu isteği işler sonra bir yanıt döner.
-- bir url--> protokol, alan adı, yol ve sorgudan oluşur. (şu sunucudak şu kaynağın detaylarını istiyorum gibi çalışır)
-- frontend--> client-side. websiteinin ön yüzünü ve görsel tarafını oluşturur. html, css js gibi diller kullanılır.
-- backend--> kullanıcıların görmediği arka yüzü oluşturur/geliştirir. python, c#, sql gibi diller kullanılır.
-- veritabanı--> verilerimizi tekrar kullanmak amaçlı depolamamızı sağlar. veriyi hızlı okur, tekrardan yazabilir, genişletebilir.
+1-f12 ile açılan geliştirici araçları ne işe yarıyor---> 
+elements kısmından o web sayfasının kaynak kodunu inceleyebiliriz, ayrıca kodlarda geçici değişiklik yapabiliriz. konsol üzerinden javascript ile çalışabilir ve hata mesajlarının görebilirz. sources'ta yine kod inceleme, hata ayıklama yapılır ayrıca dosyalar üzerinde düzenlemeler yapabiliriz. 
+
+2-network sekmesinde bir sayfa açılırken ne akıyor--->
+sayfanın html, css, js kodları anı zamanda görseller, fontlar ve api istekleri bu sekmede gözükür.
+
+3-istemci ve sunucu (client/server) ne demek --->
+client bir hizmet isteyen/isteği yapan taraftır. server ise o hizmeti sağlayan/gelen isteğe cevap veren taraftır.
+
+4-bir http isteği gidip cevabı nasıl geliyor --->
+bir http de ilk tarayıcıdan sunucuya bir istek gönderilir. istek sunucuya ulaşır, sunucu isteği işler sonra bir yanıt döner. tarayıcıda gelen veriyi kullanıcıya döndürür.
+
+5-bir url hangi parçalardan oluşuyor --->
+protokol, alan adı, yol ve sorgudan oluşur
+
+6-frontend/backend/veritabanı hangi işi yapıyor --->
+frontend: websitesinin ön yüzünü ve görsel tarafını oluşturur. kullanıcı ile etkileşime girer.
+backend: kullanıcıların görmediği arka yüzü oluşturur/geliştirir.
+veri tabanı: verileri kalıcı  olarak saklar. veriyi hızlı okur, tekrardan yazabilir, genişletebilir.
+
+7-git push origin main deki origin ve main tam olarak neyi gösteriyor --->
+Origin uzak depodur; main ise commitleri göndermek istediğimiz dalın adıdır
