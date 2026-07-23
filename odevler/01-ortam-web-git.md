@@ -26,3 +26,6 @@ main: projenin ana kodlarının toplandığı ana dalın adıdır.
 git config user.name: Değişikliği yapan kişinin adını/kullanıcı adını belirler.
 git config user.email: Değişikliği yapan kişinin e-posta adresini belirler.
 git log komutuyla da koddaki işlemleri kimin yaptığını, ne zaman yaptığını görürüz.
+
+9- network sekmesinde açılan status, time
+status: 200 OK time: 0.44 ms
