@@ -19,4 +19,5 @@ backend: kullanıcıların görmediği arka yüzü oluşturur/geliştirir.
 veri tabanı: verileri kalıcı olarak saklar. veriyi hızlı okur, tekrardan yazabilir, genişletebilir.
 
 7-git push origin main deki origin ve main tam olarak neyi gösteriyor --->
-Origin uzak depodur, main ise commitleri göndermek istediğimiz dalın adıdır 
+origin: uzak deponun uzun bağlantı adresine verilen takma addır.
+main: projenin ana kodlarının toplandığı ana dalın adıdır.
