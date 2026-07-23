@@ -21,3 +21,8 @@ veri tabanı: verileri kalıcı olarak saklar. veriyi hızlı okur, tekrardan ya
 7-git push origin main deki origin ve main tam olarak neyi gösteriyor --->
 origin: uzak deponun uzun bağlantı adresine verilen takma addır.
 main: projenin ana kodlarının toplandığı ana dalın adıdır.
+
+8- git config user.name ve user.email tam olarak ne işe yarıyor --->
+git config user.name: Değişikliği yapan kişinin adını/kullanıcı adını belirler.
+git config user.email: Değişikliği yapan kişinin e-posta adresini belirler.
+git log komutuyla da koddaki işlemleri kimin yaptığını, ne zaman yaptığını görürüz.
