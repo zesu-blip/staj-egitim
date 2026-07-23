@@ -1,5 +1,0 @@
-bugün git, github, vs code ve node.js kurulumunu yaptım ve giriş bilgileri öğrenmeye çalıştım
-github'ta repo oluşturmayı ve bu repoların projelerin daha düzenli bir şekilde yönetilmesini sağladığını öğrendim
-git'te config ile user.name ve user.email tanıttım
-github projesini klonlayarak repoyu iki farklı yerde tutmayı öğrendim
-terminalde node.js ve git için işlemler yapıp uygulamaları düzgün kurup kurmadığıma baktım
