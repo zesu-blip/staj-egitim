@@ -11,9 +11,10 @@ client bir hizmet isteyen/isteği yapan taraftır. server ise o hizmeti sağlaya
 bir http de ilk tarayıcıdan sunucuya bir istek gönderilir. istek sunucuya ulaşır, sunucu isteği işler sonra bir yanıt döner. tarayıcıda gelen veriyi kullanıcıya döndürür.
 
 5-bir url hangi parçalardan oluşuyor --->
-protokol, alan adı, yol ve sorgudan oluşur
+protokol, alan adı, yol ve sorgudan oluşur >örnek olarak>
 https://www.google.com/search?q=git
 protokol= http / alan= www.google.com / yol=/search / sorgu= ?q=git
+
 6-frontend/backend/veritabanı hangi işi yapıyor --->
 frontend: websitesinin ön yüzünü ve görsel tarafını oluşturur. kullanıcı ile etkileşime girer.
 backend: kullanıcıların görmediği arka yüzü oluşturur/geliştirir.
