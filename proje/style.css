@@ -19,5 +19,5 @@ body {background-color: rgb(126, 230, 82);}
     display: flex;
     gap: 10px;
     justify-content: left;
-    align-items: left;
+    align-items: center;
 }
