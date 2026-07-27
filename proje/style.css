@@ -1,0 +1,23 @@
+body {background-color: rgb(126, 230, 82);}
+    #baslik {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        color: rgb(221, 59, 186);
+    }
+        li {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: rgb(255, 0, 0);
+    }
+    .gorev {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+
+    div{
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: left;
+}
