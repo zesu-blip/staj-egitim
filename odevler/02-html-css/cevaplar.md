@@ -1,15 +1,15 @@
 - kodlarda özel karakter kullanmak istiyorsak <meta charset= "utf-8"> etiketini <head> etiketleri arasına yazmamız yazmamız gerekir
 - başlık etiketleri boyutları h1>h2>h3>h4>h5>h6 şeklindedir. en büyük h1 en küçük h6'dır
-- <div></div> olduğu bütün satırı kaplar, kendisinden sonra gelenleri alt satıra iter. blok düzeyinde bir elemandır
-- <span></span> satır içi bir elemandır(inline) elemandır. kendisi kadar yer kaplar, bulunduğu satırı tamamen kaplamaz
+- div -- olduğu bütün satırı kaplar, kendisinden sonra gelenleri alt satıra iter. blok düzeyinde bir elemandır
+- span -- satır içi bir elemandır(inline) elemandır. kendisi kadar yer kaplar, bulunduğu satırı tamamen kaplamaz
 - ikiside tek başına ekranda bir şey göstermez, diğer ögeleri gruplamak için kullanılır.
-- <ul></ul> -- sırasız lliste
-- <ol></ol> -- sıralı liste
-- <li></li> -- listenin elemanı
+- ul -- sırasız lliste
+- ol -- sıralı liste
+- li -- listenin elemanı
 - inputun kapanış etiketi yoktur, tek başına yazılır  ve özellikleri etiketin içine yazılır.
 - placeholder --> input boşken içinde görünür, kullanıcıya ne yazması gereken şeyi yazar
 - type--> input türünü belirler= text, password, email, checbox, subit vs
 - display:flex --> esnek bir kutu içerisinde elemanların yan yana sıralamsını ve kolayca hizalamasını sağlar 
-- justify-content --> yatay eksen boyunca hizalama yapar. left yazınca sola doğru hizalar, right sağa, center ortaya
+- justify-content --> yatay eksen boyunca hizalama yapar.
 - align-items --> dikey eksen boyunca hizalama yapar. flex-start ögenin en üstüne, center ortasına, flex-end en altına
 - gap --> flex kapsayıcı içindeki elemanların arasındaki boşluk (input-buton arası gibi)
