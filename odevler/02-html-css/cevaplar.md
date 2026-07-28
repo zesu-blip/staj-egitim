@@ -2,11 +2,14 @@
 head sayfanın kendisiyle ilgili bilgileri tutar. title tarayıcı sekmesinde çıkan yazıdır.  body ekranda görünen her şeydir.
 
 2- başlık etiketleri boyutları h1>h2>h3>h4>h5>h6 şeklindedir. en büyük h1 en küçük h6'dır
+
 div -> olduğu bütün satırı kaplar, kendisinden sonra gelenleri alt satıra iter. blok düzeyinde bir elemandır
+
 span -> satır içi bir elemandır(inline) elemandır. kendisi kadar yer kaplar, bulunduğu satırı tamamen kaplamaz
     ikiside tek başına ekranda bir şey göstermez, diğer ögeleri gruplamak için kullanılır.
 
-3-  ul -> sırasız liste
+3- 
+    ul -> sırasız liste
 
     ol -> sıralı liste
 
@@ -22,29 +25,31 @@ type--> input türünü belirler= text, password, email, checbox, submit vs
 aynı elemana hem tip seçicisi (li) hem de class seçicisi uygulanırsa, class seçicisinin verdiği stil geçerli olur. çünkü class seçicisinin tip seçicisinden daha önceliklidir. Öncelik sırası: id > class > eleman
 
 7- padding verdiğimde içerik ile kenarlık arası boşluk değişiyor. margin değeribi değiştirdiğimde kutuların arasındaki boşluk değişiyor. border'da kutunun kenarlarını kalınlaştırıp inceltiyor.
+
 f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerinin aynı olduğunu kontrol ettim
 
 8-  display:flex; ile div'deki input ve buton elemanları yan yana dizildi. default bu
-gap ile divdeki elemanların arasındaki boşluğu ayarlandı
-justify-content
-flex-start -> elemanları kapsayıcının başına/sol üste koyar. default bu
-flex-end -> elemanları kapsayıcının sonuna/sağ üste koyar
-center -> kapsayıcının ortasına koyar
-align-items
-stretch -> elemanları kapsayıcının yüksekliği kadar gere. default bu
-center -> dikeyde ortalar
-flex-start -> bulunduğu kısmın üstüne yerleştirir
-flex-end -> bulunduğu kısmın altına yerleştirir
-baseline -> yazı tabanlarına göre hizalayarak yerleştirir
-flex-direction:colunm; ile divdeki elemanları ortada ve alt alta dizdi
+    gap ile divdeki elemanların arasındaki boşluğu ayarlandı
+    justify-content
+    flex-start -> elemanları kapsayıcının başına/sol üste koyar. default bu
+    flex-end -> elemanları kapsayıcının sonuna/sağ üste koyar
+    center -> kapsayıcının ortasına koyar
+    align-items
+    stretch -> elemanları kapsayıcının yüksekliği kadar gere. default bu
+    center -> dikeyde ortalar
+    flex-start -> bulunduğu kısmın üstüne yerleştirir
+    flex-end -> bulunduğu kısmın altına yerleştirir
+    baseline -> yazı tabanlarına göre hizalayarak yerleştirir
+    flex-direction:colunm; ile divdeki elemanları ortada ve alt alta dizdi
 
-9-  status 200 time 1.69 ms
-    status 200 time 7.52 ms
-    status 200 time 1.82 mss
+9-  status 200 time 1.69 ms/
+    status 200 time 7.52 ms/
+    status 200 time 1.82 ms
 
 
 ---- remove- v
     C:\Users\Azemi\Desktop\staj-egitim\proje> git remote -v
+
     origin  https://github.com/zesu-blip/staj-egitim.git (fetch)
     origin  https://github.com/zesu-blip/staj-egitim.git (push)
 
