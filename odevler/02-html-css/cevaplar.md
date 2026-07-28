@@ -8,11 +8,10 @@ div -> olduğu bütün satırı kaplar, kendisinden sonra gelenleri alt satıra 
 span -> satır içi bir elemandır(inline) elemandır. kendisi kadar yer kaplar, bulunduğu satırı tamamen kaplamaz
     ikiside tek başına ekranda bir şey göstermez, diğer ögeleri gruplamak için kullanılır.
 
-3- 
+3-  
+    
     ul -> sırasız liste
-
     ol -> sıralı liste
-
     li -> listenin satırı/elemanı
 
 4- inputun kapanış etiketi yoktur, tek başına yazılır  ve özellikleri etiketin içine yazılır: input type="text" placeholder="Yeni görev"
@@ -24,7 +23,7 @@ type--> input türünü belirler= text, password, email, checbox, submit vs
 6- bir kuralı nereye uygulayacağımızı seçicilerle belirleriz. class seçicisi(.) birden fazla elemana uygulanabilir, id(#) seçicisi ise yalnızca tek bir elemana uygulanır
 aynı elemana hem tip seçicisi (li) hem de class seçicisi uygulanırsa, class seçicisinin verdiği stil geçerli olur. çünkü class seçicisinin tip seçicisinden daha önceliklidir. Öncelik sırası: id > class > eleman
 
-7- padding verdiğimde içerik ile kenarlık arası boşluk değişiyor. margin değeribi değiştirdiğimde kutuların arasındaki boşluk değişiyor. border'da kutunun kenarlarını kalınlaştırıp inceltiyor.
+7- padding verdiğimde içerik ile kenarlık arası boşluk değişiyor. margin değerini değiştirdiğimde kutuların arasındaki boşluk değişiyor. border da kutunun kenarlarını kalınlaştırıp inceltiyor.
 
 f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerinin aynı olduğunu kontrol ettim
 
@@ -48,7 +47,6 @@ f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerini
 
 
 ---- remove- v
-    C:\Users\Azemi\Desktop\staj-egitim\proje> git remote -v
 
     origin  https://github.com/zesu-blip/staj-egitim.git (fetch)
     origin  https://github.com/zesu-blip/staj-egitim.git (push)
