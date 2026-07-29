@@ -14,20 +14,23 @@ span -> satır içi bir elemandır(inline) elemandır. kendisi kadar yer kaplar,
     ol -> sıralı liste
     li -> listenin satırı/elemanı
 
-4- inputun kapanış etiketi yoktur, tek başına yazılır  ve özellikleri etiketin içine yazılır: input type="text" placeholder="Yeni görev"
+4- inputun kapanış etiketi yoktur, tek başına yazılır  ve özellikleri etiketin içine yazılır: input type="text"placeholder="Yeni görev"
+
 placeholder --> input boşken içinde görünür, kullanıcıya ne yazması gereken şeyi yazar
+
 type--> input türünü belirler= text, password, email, checbox, submit vs
 
-5- css dosyasını html dosyasına bağlamak için ->link rel="stylesheet" href="style.css"-< etiketi head etiketleri arasına yazılır
+5- css dosyasını html dosyasına bağlamak için ->link rel="stylesheet" href="style.css"<- etiketi head etiketleri arasına yazılır
 
 6- bir kuralı nereye uygulayacağımızı seçicilerle belirleriz. class seçicisi(.) birden fazla elemana uygulanabilir, id(#) seçicisi ise yalnızca tek bir elemana uygulanır
-aynı elemana hem tip seçicisi (li) hem de class seçicisi uygulanırsa, class seçicisinin verdiği stil geçerli olur. çünkü class seçicisinin tip seçicisinden daha önceliklidir. Öncelik sırası: id > class > eleman
+aynı elemana hem tip seçicisi hem de class seçicisi uygulanırsa, class seçicisinin verdiği stil geçerli olur. çünkü class seçicisinin tip seçicisinden daha önceliklidir. Öncelik sırası: id > class > tip
 
 7- padding verdiğimde içerik ile kenarlık arası boşluk değişiyor. margin değerini değiştirdiğimde kutuların arasındaki boşluk değişiyor. border da kutunun kenarlarını kalınlaştırıp inceltiyor.
 
 f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerinin aynı olduğunu kontrol ettim
 
-8-  display:flex; ile div'deki input ve buton elemanları yan yana dizildi. default bu
+8-  display:flex; ile div'deki input ve buton elemanları yan yana dizildi. default bu.
+
     gap ile divdeki elemanların arasındaki boşluğu ayarlandı
     justify-content
     flex-start -> elemanları kapsayıcının başına/sol üste koyar. default bu
