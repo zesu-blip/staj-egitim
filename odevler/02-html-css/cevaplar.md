@@ -35,12 +35,12 @@ f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerini
     justify-content
     flex-start -> elemanları kapsayıcının başına/sol üste koyar. default bu
     flex-end -> elemanları kapsayıcının sonuna/sağ üste koyar
-    center -> kapsayıcının ortasına koyar
+    center -> elemanları ortaad hizalar
     align-items
-    stretch -> elemanları kapsayıcının yüksekliği kadar gere. default bu
+    stretch -> elemanları kapsayıcının yüksekliği kadar gerer. default bu
     center -> dikeyde ortalar
-    flex-start -> bulunduğu kısmın üstüne yerleştirir
-    flex-end -> bulunduğu kısmın altına yerleştirir
+    flex-start -> elemanları üstüne yerleştirir
+    flex-end -> elemanları altına yerleştirir
     baseline -> yazı tabanlarına göre hizalayarak yerleştirir
     flex-direction:colunm; ile divdeki elemanları ortada ve alt alta dizdi
 
@@ -49,7 +49,7 @@ f12 ile box modelindeki değerlerle verdiğim margin padding border değerlerini
     status 200 time 1.82 ms
 
 
----- remove- v
+---- remote- v
 
     origin  https://github.com/zesu-blip/staj-egitim.git (fetch)
     origin  https://github.com/zesu-blip/staj-egitim.git (push)
