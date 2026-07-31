@@ -1,31 +1,26 @@
-body {background-color: rgb(126, 230, 82);}
-    #baslik {
-        font-family: Arial, sans-serif;
-        font-size: 24px;
-        color: rgb(221, 59, 186);
-    }
-        li {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        color: rgb(255, 0, 0);
-    }
-    .gorev {
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        color: black;
-    }
+body {
+    background-color: rgb(126, 230, 82);
+}
 
-    div{
-    font-size: 100px;
+#baslik {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(221, 59, 186);
+}
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    padding: 15px;
+    margin: 7px;
+    border: 3px solid rgb(212, 29, 166);
+}
+
+.gorev-ekle {
     display: flex;
+    flex-direction: row;
     gap: 10px;
-    height: 50px;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
-    }
-    li{
-        padding: 15px;
-        margin: 7px;
-        border: 3px solid rgb(212, 29, 166);
-    }
+}
