@@ -64,7 +64,15 @@ On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean       çıktısını verdi.
 
---git log komutu ise commit geçmişini, commit messajlarını, yazarı ve commit tarihini göster.
+--git log komutu ise commit geçmişini, commit messajlarını, yazarı ve commit tarihini göster. 
+
+    809cfb6 (HEAD -> main, origin/main, origin/HEAD) gunluk raporlar eklendi
+    b3a8dfe odev eksikleri tamamlandi
+    ab9235f Merge branch 'main' of https://github.com/zesu-blip/staj-egitim
+    eb3190e html ve css duzenlemeleri tamamlandi
+    778545a cevapları guncelledim
+
+--odevler/{01-ortam-web-git.md => 01-ortam-web-git/cevaplar.md}
 
 --bir dosyanın adı veya yeri değiştirildiğinde git bunu renamed olarak gösteriyor.
 
