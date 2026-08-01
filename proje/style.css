@@ -10,11 +10,14 @@ body {
 
 li {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: rgb(10, 10, 10);
     padding: 15px;
     margin: 7px;
     border: 3px solid rgb(212, 29, 166);
+}
+
+.gorev {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
 }
 
 .gorev-ekle {
@@ -23,4 +26,12 @@ li {
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
+}
+
+span {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(212, 29, 166);
 }
