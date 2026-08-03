@@ -12,7 +12,7 @@ li {
     font-family: Arial, sans-serif;
     padding: 15px;
     margin: 7px;
-    border: 3px solid rgb(212, 29, 166);
+    border: 3px solid rgb(221, 59, 186);
 }
 
 .gorev {
@@ -28,10 +28,12 @@ li {
     align-items: center;
 }
 
+.vurgu {
+    color: rgb(221, 59, 186);
+}
 span {
     font-family: Arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 16px;
-    color: rgb(212, 29, 166);
 }
