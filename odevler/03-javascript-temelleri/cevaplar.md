@@ -19,3 +19,5 @@ hiçbir değer vermeden tanımladığım x ise undefined olarak çıkıyor
 
 == bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
 === bu tiplerine(typeof) bakıp aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı
+
+if else koşullarını kullanarak 
