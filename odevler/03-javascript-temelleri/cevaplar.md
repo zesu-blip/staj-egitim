@@ -20,4 +20,13 @@ hiçbir değer vermeden tanımladığım x ise undefined olarak çıkıyor
 == bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
 === bu tiplerine(typeof) bakıp aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı
 
-if else koşullarını kullanarak 
+if koşulu true ise çalışır, false ise else çalışır. else if ile başka koşullar eklenebilir.
+
+for döngüsünde ilk bölüm başlangıç değerini, ikinci bölüm koşulu, üçüncü bölüm ise artırma işlemini belirtir.
+
+i % 2 == 0 kullanılarak çift sayılar bulunabilir. while döngüsünde ise koşul parantez içinde yazılır ve artırma işlemi döngünün içinde yapılır.
+
+i++ ile i = i + 1 aynı şekilde değeri 1 artırır.
+
+fonksiyonlar belirli bir işi tekrar kullanabilmek için oluşturulur. parantez içindeki değerler parametredir.
+return değeri fonksiyonun dışına geri gönderir. console.log ise sadece sonucu konsola yazdırır. return ile dönen değer bir değişkene atanıp tekrar kullanılabilir.
