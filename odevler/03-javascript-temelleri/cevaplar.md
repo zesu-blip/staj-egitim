@@ -1,32 +1,70 @@
 1-- li seçicisine kırmızı, .gorev class seçicisine siyah renk verdiğimde .gorev seçicisinin önceliği daha yüksek olduğu için siyah renk uygulandı. F12 geliştirici araçlarında li seçicisindeki kırmızı renk kuralının üzerinin çizili olduğunu gördüm.
 
-2-- html'de kodlar baştan sona doğru okunduğu için ilgili dosyalar yüklendikten sonra çalışsın diye `<script>` linkini body etiketinin sonuna koyarız. eğer ki script linkini head etiketi arasına koyarsam, html öğeleri henüz  yüklenmeden çalışmaya başlayabileceği için sorun çıkabilir.
+3-- html'de kodlar baştan sona doğru okunduğu için ilgili dosyalar yüklendikten sonra çalışsın diye `<script>` linkini body etiketinin sonuna koyarız. eğer ki script linkini head etiketi arasına koyarsam, html öğeleri henüz  yüklenmeden çalışmaya başlayabileceği için sorun çıkabilir.
 console.log() içine yazılan değer veya işlemin sonucunu konsola veriyor
 
-var-let --> sonradan değeri değiştirilebilen 
-const --> sonradan değeri değiştirilemeyen
-const ile iki ayrı değer belirledikten sonra konsolda çıkan hata mesajı: script.js:4 Uncaught TypeError: Assignment to constant variable.
+4--
+    
+    var-let --> sonradan değeri değiştirilebilen 
+    const --> sonradan değeri değiştirilemeyen
+    const ile iki ayrı değer belirledikten sonra konsolda çıkan hata mesajı--> script.js:4 Uncaught TypeError: Assignment to constant variable.
 
-string --> yazı
-number --> sayı
-boolean --> true, false
-konsola bunları yazdıktan sonra çıktılar:
-console.log(typeof "5"); --> string
-console.log(typeof 5); --> number
-console.log("5" + 5); --> 55 (string 5 ile number 5i toplayamaz toplaması için ikisinin de number olması lazım)
+5--
+ 
+    string --> yazı
+    number --> sayı
+    boolean --> true, false
+    konsola bunları yazdıktan sonra çıktılar:
+    console.log(typeof "5"); --> string
+    console.log(typeof 5); --> number
+    console.log("5" + 5); --> 55 ("5" + 5 işleminde string ve number birleştirildiği için sonuç "55" olur.) 
+    console.log(5 + 5); --> 10
+    hiçbir değer vermeden tanımladığım x ise undefined olarak çıkıyor
 
-hiçbir değer vermeden tanımladığım x ise undefined olarak çıkıyor
+6-- 
 
-== bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
-=== bu tiplerine(typeof) bakıp aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı
+    == bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
+    === bu tiplerine(typeof) bakıp aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı
+    7 % 2 --> 1
+    % bölme işleminden kalanı verir.
+    5 > 3 --> true
+    5 < 3 --> false
+    5 >= 5 --> true
+    4 <= 3 --> false
+    true && true --> true
+    true || false --> true
+    !true --> false
 
-if koşulu true ise çalışır, false ise else çalışır. else if ile başka koşullar eklenebilir.
+7-- if koşulu true ise çalışır, false ise else çalışır. else if ile başka koşullar eklenebilir.
 
-for döngüsünde ilk bölüm başlangıç değerini, ikinci bölüm koşulu, üçüncü bölüm ise artırma işlemini belirtir.
+8-- for döngüsünde ilk bölüm başlangıç değerini, ikinci bölüm koşulu, üçüncü bölüm ise artırma işlemini belirtir.
 
 i % 2 == 0 kullanılarak çift sayılar bulunabilir. while döngüsünde ise koşul parantez içinde yazılır ve artırma işlemi döngünün içinde yapılır.
 
 i++ ile i = i + 1 aynı şekilde değeri 1 artırır.
 
-fonksiyonlar belirli bir işi tekrar kullanabilmek için oluşturulur. parantez içindeki değerler parametredir.
+9-- fonksiyonlar belirli bir işi tekrar kullanabilmek için oluşturulur. parantez içindeki değerler parametredir.
 return değeri fonksiyonun dışına geri gönderir. console.log ise sadece sonucu konsola yazdırır. return ile dönen değer bir değişkene atanıp tekrar kullanılabilir.
+
+10-- problem1
+1'den 20'ye kadar olan sayıları döngü ile kontrol ettim. 3'e tam bölünen sayıları if kullanarak konsola yazdırdım ve sonuç olarak 3, 6, 9, 12, 15 ve 18 çıktı.
+
+problem2
+kullanıcının girdiği sayının çift mi tek mi olduğunu if ile kontrol edip return ile döndürdüm. farklı sayılarla deneyerek kontrol ettim.
+
+problem3
+kullanıcının girdiği iki sayıyı karşılaştırarak büyük olan sayıyı if ile bulup return ile döndürdüm. farklı sayılar girerek sonuçları kontrol ettim.
+
+11--
+
+    Uncaught ReferenceError: x is not defined   script.js:108
+-> tanımlamadığım bir değeri yazdırmaya çalıştığım için hata verdi
+
+
+    Uncaught ReferenceError: problem33 is not defined   script.js:107 
+-> fonksiyonun adını yanlış yazıp olmayan bir fonksiyonu çağırmaya çalıştığım için hata verdi
+
+    Uncaught SyntaxError: Unexpected token 'else'   script js:100 
+-> if koşulunun süslü parantezini eksik yazdığım için hata verdi
+
+12-- bir fonksiyonun içinde tanımladığım değişkene fonksiyonun dışından erişemem bu yüzden dışarıdan erişmeye çalıştığımda hata aldım. bunun adı local scope. 
