@@ -24,7 +24,7 @@ console.log() içine yazılan değer veya işlemin sonucunu konsola veriyor
 6-- 
 
     == bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
-    === bu tiplerine(typeof) bakıp aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı
+    === bu hem tiplerine(typeof) hem de değerlerine bakıp ikiside aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı, 5===6 yaptığımda da false verdi çünkü tipleri aynı olsa bile değerleri farklı.
     7 % 2 --> 1
     % bölme işleminden kalanı verir.
     5 > 3 --> true
@@ -50,10 +50,11 @@ return değeri fonksiyonun dışına geri gönderir. console.log ise sadece sonu
 1'den 20'ye kadar olan sayıları döngü ile kontrol ettim. 3'e tam bölünen sayıları if kullanarak konsola yazdırdım ve sonuç olarak 3, 6, 9, 12, 15 ve 18 çıktı.
 
 problem2
-kullanıcının girdiği sayının çift mi tek mi olduğunu if ile kontrol edip return ile döndürdüm. farklı sayılarla deneyerek kontrol ettim.
+sayıyı parantez içinden parametre olarak gönderip if-else yapısıyla çift mi tek mi olduğunu kontrol ettim ve sonucu return ile döndürdüm. ciftMi(7) şeklinde çağırarak sonucunu kontrol ettim.
 
 problem3
-kullanıcının girdiği iki sayıyı karşılaştırarak büyük olan sayıyı if ile bulup return ile döndürdüm. farklı sayılar girerek sonuçları kontrol ettim.
+kullanıcının promt ile girdiği değerler string olarak döndüğü için ilk karaktere göre alfabetik sıralama yapar. 9>1 olduğu için çıktı 9 büyüktür 10dan oldu.
+bu yüzden fonksiyonu dışarıdan parametre alacak şekilde güncelledim. büyük olan sayıyı if-else ile bulup return ile döndürdüm. farklı sayılar girerek sonuçları kontrol ettim.
 
 11--
 
