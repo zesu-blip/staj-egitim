@@ -5,7 +5,7 @@ console.log() içine yazılan değer veya işlemin sonucunu konsola veriyor
 
 4--
     
-    var-let --> sonradan değeri değiştirilebilen 
+    let --> sonradan değeri değiştirilebilen 
     const --> sonradan değeri değiştirilemeyen
     const ile iki ayrı değer belirledikten sonra konsolda çıkan hata mesajı--> script.js:4 Uncaught TypeError: Assignment to constant variable.
 
@@ -20,11 +20,13 @@ console.log() içine yazılan değer veya işlemin sonucunu konsola veriyor
     console.log("5" + 5); --> 55 ("5" + 5 işleminde string ve number birleştirildiği için sonuç "55" olur.) 
     console.log(5 + 5); --> 10
     hiçbir değer vermeden tanımladığım x ise undefined olarak çıkıyor
+    let durum = true; console.log(typeof durum); --> çıktısı boolean olur
 
 6-- 
 
-    == bu değerlerin eşitliğine bakar eiştse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
+    == bu değerlerin eşitliğine bakar eşitse true değilse false döndürür. mesela "5"== 5 yaptığımda konsolda true çıktı.
     === bu hem tiplerine(typeof) hem de değerlerine bakıp ikiside aynıysa true farklıysa false döndürür bunda da "5"===5 yaptığımda false verdi çünkü tipleri farklıydı, 5===6 yaptığımda da false verdi çünkü tipleri aynı olsa bile değerleri farklı.
+    ödevde yazdığım kodlarda == yerine === kullandığımda sonuçlar değişmedi çünkü karşılaştırılan değerlerin tipleri aynıydı. 
     7 % 2 --> 1
     % bölme işleminden kalanı verir.
     5 > 3 --> true
@@ -36,6 +38,10 @@ console.log() içine yazılan değer veya işlemin sonucunu konsola veriyor
     !true --> false
 
 7-- if koşulu true ise çalışır, false ise else çalışır. else if ile başka koşullar eklenebilir.
+gorevSayisi değişkenin değerini sırayla değiştirerek üç farklı ihtimali çalıştırdım
+    gorevSayisi= 0; -> liste boş
+    gorevSayisi= 3; -> liste kısa
+    gorevSayisi= 8; -> liste dolu
 
 8-- for döngüsünde ilk bölüm başlangıç değerini, ikinci bölüm koşulu, üçüncü bölüm ise artırma işlemini belirtir.
 
