@@ -11,8 +11,8 @@ else if (gorevSayisi > 5) {
 }
 
 // 8. döngü
-for (let i = 1; i <= 10; i = i + 1) { 
-    console.log(i); 
+for (let i = 1; i <= 10; i = i + 1) {
+    console.log(i);
 }
 
 // çift sayıları yazdırma 
@@ -22,7 +22,7 @@ for (let i = 1; i <= 10; i++) {
     }
 }
 
-let j = 1; 
+let j = 1;
 while (j <= 10) {
     console.log(j);
     j = j + 1;
@@ -30,7 +30,7 @@ while (j <= 10) {
 
 // 9. fonksiyon
 function selamla(ad) {
-    console.log("merhaba " + ad); 
+    console.log("merhaba " + ad);
 }
 selamla("Zeynep");
 
@@ -59,12 +59,12 @@ problem1();
 function ciftMi(sayi) {
     if (sayi % 2 === 0) {
         return sayi + " çifttir";
-    } 
+    }
     else {
         return sayi + " tektir";
     }
 }
-console.log(ciftMi(7)); 
+console.log(ciftMi(7));
 
 // problem 3 
 function buyukOlaniBul(a, b) {
@@ -82,7 +82,7 @@ console.log(buyukOlaniBul(9, 10));
 
 // scope
 function deneme() {
-    let x = 7; 
+    let x = 7;
     console.log(x);
 }
 deneme();
@@ -90,3 +90,54 @@ deneme();
 // boolean
 let durum = true;
 console.log(typeof durum);
+
+//nesne
+let alisveris = ["ekmek", "süt", "yumurta"];
+console.log(alisveris.length);
+console.log(alisveris);
+console.log(alisveris.length);
+alisveris.push("peynir");
+for (let i = 0; i < alisveris.length; i++) {
+    console.log(alisveris[i]);
+}
+
+// let gorevler = [{
+//     metin: "ekmek al",
+//     bitti: false }]
+// console.log(gorevler[0].metin);
+// console.log(gorevler[0].bitti);
+
+// gorevler[0].bitti=true;
+// console.log(gorevler[0].bitti);
+// console.log(gorevler);
+
+let gorevler = [
+    { metin: "ekmek al", bitti: false },
+    { metin: "kitabı bitir", bitti: true },
+    { metin: "markete git", bitti: false }];
+for (let i = 0; i < gorevler.length; i++) {
+    if (gorevler[i].bitti == false) {
+        console.log(gorevler[i].metin);
+    }
+}
+
+let baslik = document.querySelector("#baslik");
+let liste = document.querySelector("ul");
+let input = document.querySelector("input");
+let buton = document.querySelector("button");
+buton.addEventListener("click", function () {
+    console.log(input.value);
+});
+
+
+console.log(baslik);
+console.log(liste);
+console.log(buton);
+console.log(input);
+
+baslik.textContent = "Görev Listem Devam Ediyor";
+
+let li = document.createElement("li")
+li.textContent = "yeni görev";
+liste.appendChild(li)
+li.classList.add("gorev");
