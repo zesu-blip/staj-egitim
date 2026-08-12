@@ -125,19 +125,41 @@ let baslik = document.querySelector("#baslik");
 let liste = document.querySelector("ul");
 let input = document.querySelector("input");
 let buton = document.querySelector("button");
+
+function listeyiCiz() {
+    liste.innerHTML = "";
+
+    for (let i = 0; i < gorevler.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = gorevler[i].metin;
+        li.classList.add("gorev");
+
+        li.addEventListener("click", function () {
+            gorevler.splice(i, 1);
+            listeyiCiz();
+        });
+
+        liste.appendChild(li);
+    }
+}
+
+listeyiCiz();
+
 buton.addEventListener("click", function () {
-    console.log(input.value);
+    if (input.value != "") {
+        gorevler.push({
+            metin: input.value,
+            bitti: false
+        });
+
+        listeyiCiz();
+
+        input.value = "";
+    }
 });
-
-
 console.log(baslik);
 console.log(liste);
 console.log(buton);
 console.log(input);
 
 baslik.textContent = "Görev Listem Devam Ediyor";
-
-let li = document.createElement("li")
-li.textContent = "yeni görev";
-liste.appendChild(li)
-li.classList.add("gorev");
