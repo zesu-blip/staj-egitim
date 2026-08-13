@@ -111,6 +111,7 @@ for (let i = 0; i < alisveris.length; i++) {
 // console.log(gorevler[0].bitti);
 // console.log(gorevler);
 
+
 let gorevler = [
     { metin: "ekmek al", bitti: false },
     { metin: "kitabı bitir", bitti: true },
@@ -126,6 +127,11 @@ let liste = document.querySelector("ul");
 let input = document.querySelector("input");
 let buton = document.querySelector("button");
 
+// buton.addEventListener("click", function () {
+// console.log(input.value);
+// console.log(typeof input.value);
+// console.log(input.value + 5);
+// console.log(Number(input.value) + 5);});
 function listeyiCiz() {
     liste.innerHTML = "";
 
@@ -162,4 +168,4 @@ console.log(liste);
 console.log(buton);
 console.log(input);
 
-baslik.textContent = "Görev Listem Devam Ediyor";
+baslik.textContent = "Görev Listem";
