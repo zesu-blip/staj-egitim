@@ -91,47 +91,58 @@ deneme();
 let durum = true;
 console.log(typeof durum);
 
-//nesne
+// diziler
 let alisveris = ["ekmek", "süt", "yumurta"];
 console.log(alisveris.length);
 console.log(alisveris);
-console.log(alisveris.length);
+
 alisveris.push("peynir");
+
+console.log(alisveris.length);
+console.log(alisveris);
+
+console.log(alisveris[alisveris.length - 1]);
 for (let i = 0; i < alisveris.length; i++) {
     console.log(alisveris[i]);
 }
 
-// let gorevler = [{
-//     metin: "ekmek al",
-//     bitti: false }]
-// console.log(gorevler[0].metin);
-// console.log(gorevler[0].bitti);
+//nesne
+let gorev = {
+    metin: "ekmek al",
+    bitti: false
+};
 
-// gorevler[0].bitti=true;
-// console.log(gorevler[0].bitti);
-// console.log(gorevler);
+console.log(gorev.metin);
+console.log(gorev.bitti);
 
+gorev.bitti = true;
+console.log(gorev.bitti);
+console.log(gorev);
 
+//diziler
 let gorevler = [
     { metin: "ekmek al", bitti: false },
     { metin: "kitabı bitir", bitti: true },
     { metin: "markete git", bitti: false }];
 for (let i = 0; i < gorevler.length; i++) {
-    if (gorevler[i].bitti == false) {
+    if (gorevler[i].bitti === false) {
         console.log(gorevler[i].metin);
     }
 }
 
+// querySelector ve textContent
 let baslik = document.querySelector("#baslik");
 let liste = document.querySelector("ul");
 let input = document.querySelector("input");
 let buton = document.querySelector("button");
 
-// buton.addEventListener("click", function () {
-// console.log(input.value);
-// console.log(typeof input.value);
-// console.log(input.value + 5);
-// console.log(Number(input.value) + 5);});
+buton.addEventListener("click", function () {
+    console.log(input.value);
+    console.log(typeof input.value);
+    console.log(input.value + 5);
+    console.log(Number(input.value) + 5);
+});
+
 function listeyiCiz() {
     liste.innerHTML = "";
 
@@ -139,7 +150,7 @@ function listeyiCiz() {
         let li = document.createElement("li");
         li.textContent = gorevler[i].metin;
         li.classList.add("gorev");
-
+        //görev ekleme ve splice ile silme
         li.addEventListener("click", function () {
             gorevler.splice(i, 1);
             listeyiCiz();
@@ -152,7 +163,7 @@ function listeyiCiz() {
 listeyiCiz();
 
 buton.addEventListener("click", function () {
-    if (input.value != "") {
+    if (input.value !== "") {
         gorevler.push({
             metin: input.value,
             bitti: false
