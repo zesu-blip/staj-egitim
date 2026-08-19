@@ -119,29 +119,12 @@ gorev.bitti = true;
 console.log(gorev.bitti);
 console.log(gorev);
 
-//diziler
-let gorevler = [
-    { metin: "ekmek al", bitti: false },
-    { metin: "kitabı bitir", bitti: true },
-    { metin: "markete git", bitti: false }];
-for (let i = 0; i < gorevler.length; i++) {
-    if (gorevler[i].bitti === false) {
-        console.log(gorevler[i].metin);
-    }
-}
-
 // querySelector ve textContent
 let baslik = document.querySelector("#baslik");
 let liste = document.querySelector("ul");
 let input = document.querySelector("input");
 let buton = document.querySelector("button");
 
-buton.addEventListener("click", function () {
-    console.log(input.value);
-    console.log(typeof input.value);
-    console.log(input.value + 5);
-    console.log(Number(input.value) + 5);
-});
 
 function listeyiCiz() {
     liste.innerHTML = "";
@@ -152,7 +135,7 @@ function listeyiCiz() {
         li.classList.add("gorev");
         //görev ekleme ve splice ile silme
         li.addEventListener("click", function () {
-            gorevler.splice(i, 1);
+            fetch("/gorevler/" + i, { method: "DELETE" }).then(function (cevap) { return cevap.json(); }).then(function (veri) { gorevler = veri; listeyiCiz(); });
             listeyiCiz();
         });
 
@@ -160,18 +143,22 @@ function listeyiCiz() {
     }
 }
 
-listeyiCiz();
 
 buton.addEventListener("click", function () {
     if (input.value !== "") {
-        gorevler.push({
-            metin: input.value,
-            bitti: false
-        });
-
-        listeyiCiz();
-
-        input.value = "";
+        fetch("/gorevler", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ metin: input.value, bitti: false })
+        })
+            .then(function (cevap) {
+                return cevap.json();
+            })
+            .then(function (veri) {
+                gorevler = veri;
+                listeyiCiz();
+                input.value = "";
+            });
     }
 });
 console.log(baslik);
@@ -180,3 +167,15 @@ console.log(buton);
 console.log(input);
 
 baslik.textContent = "Görev Listem";
+
+let gorevler = [];
+
+fetch("/gorevler")
+    .then(function (cevap) {
+        return cevap.json();
+    })
+    .then(function (veri) {
+        gorevler = veri;
+        listeyiCiz();
+    });
+console.log(gorevler);
