@@ -142,7 +142,7 @@ function listeyiCiz() {
         liste.appendChild(li);
     }
 }
-
+ 
 
 buton.addEventListener("click", function () {
     if (input.value !== "") {
