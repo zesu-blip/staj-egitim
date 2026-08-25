@@ -1,0 +1,3 @@
+3-->liste.innerHTML = ""; satırı listeyi her çizmeden önce ekranı temizliyor. Bu satır olmasaydı her yeni görev eklediğimde eskiler silinmeden üstüne tekrar ekleniyordu, yani aynı görevler alt alta defalarca görünüyordu.
+7--> stopPropagation() koymadan önce sil butonuna basınca tıklama li'ye de gidiyordu, yani görev hem siliniyor hem de aynı anda tamamlandı gibi işaretlenmeye çalışılıyordu. stopPropagation() ekleyince tıklama sadece sil butonunda kalıyor, li'ye geçmiyor.
+9--> input'u boş bırakıp eklemeye çalışınca sunucu 400 hatası döndü, yani "metin bos olamaz" diyerek isteği reddetti.
