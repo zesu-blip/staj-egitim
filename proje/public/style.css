@@ -37,3 +37,7 @@ span {
     font-weight: bold;
     font-size: 16px;
 } 
+.bitti {
+    text-decoration: line-through;
+    color: gray;
+}
