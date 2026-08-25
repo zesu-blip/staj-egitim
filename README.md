@@ -1,2 +1,1 @@
-merhaba, ben Zeynep Sude. bilgisayar programcılığı öğrencisiyim ve bu repoyu staj sürecinde yaptığım çalışmaları, 
-oğrendiklerimi ve geliştirdiğim projeleri paylaşmak için oluşturdum.
+Görev listesi uygulaması için bkz. [`proje/`](./proje) klasörü.
